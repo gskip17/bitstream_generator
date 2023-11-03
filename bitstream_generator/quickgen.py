@@ -53,7 +53,7 @@ def generate(sender, value, user_data):
 
 
 dpg.create_context()
-dpg.create_viewport(title="QuickGen")
+dpg.create_viewport(title="QuickGen", width=770)
 dpg.setup_dearpygui()
 
 
