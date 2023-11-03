@@ -28,7 +28,7 @@ class BitstreamGenerator:
         self.part_data = csv.DictReader( open( PART_CSV, "r" ), delimiter="," )
         return
     
-    def _create_name(self, part_name, settings: BitstreamSettings) -> str:
+    def _create_name(self, part_name : str, settings: BitstreamSettings) -> str:
         name = part_name
         
         if settings.perframe:
