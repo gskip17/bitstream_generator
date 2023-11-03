@@ -69,12 +69,8 @@ with dpg.window(label="Parts", no_close=True):
                 continue
             
             with dpg.group(filter_key=p["PART"], horizontal=True):
-                dpg.add_text(p["PART"])
-                dpg.add_text(p["ARCH"])
-                dpg.add_text(p["FULLARCH"])
-                dpg.add_text(p["FAMILY"])
-                dpg.add_text(p["IDCODE"])
-                dpg.add_text(p["DEVICE"])
+                for _, v in p.items():
+                    dpg.add_text(v)
                 dpg.add_button(label="SELECT", callback=set_target, user_data=p)
 
 # Render launch/settings window
