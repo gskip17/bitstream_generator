@@ -1,0 +1,5 @@
+bitstream_generator/__pycache__
+bitstream_generator/template/outputs/*.bit
+bitstream_generator/template/outputs/*.bin
+*.bit
+*.egg-info

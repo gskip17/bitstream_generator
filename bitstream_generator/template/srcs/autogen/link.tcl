@@ -1,0 +1,1 @@
+link_design -top top -part xc7a35tiftg256-1L
